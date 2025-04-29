@@ -6,11 +6,11 @@
 
 🌟 *A Cutting-Edge Solution and Dataset for Polarization-based Reflection-Free Imaging*  
 
-<img src="docs/static/images/reflection-refraction-polarization.gif" alt="Polarization-based Reflection and Refraction" width="50%">
+<img src="https://raw.githubusercontent.com/mdyao/PolarFree/doc/docs/static/images/reflection-refraction-polarization.gif" alt="Polarization-based Reflection and Refraction" width="50%">
 
 *Image source: [ThinkLucid](https://thinklucid.com/tech-briefs/polarization-explained-sony-polarized-sensor/)*  
 
-🔗 [**Project Page**](https://mdyao.github.io/PolarFree/) | 📄 [**Paper**](https://arxiv.org/abs/2503.18055) | 📦 [**Dataset**](Coming soon...) 
+🔗 [**Project Page**](https://mdyao.github.io/PolarFree/) | 📄 [**Paper**](https://arxiv.org/abs/2503.18055) | 📦 [**Dataset**](https://huggingface.co/datasets/Mingde/PolaRGB) 
 
 ---
 
@@ -27,7 +27,7 @@
 - ✅ **2025-03-23** - 🛠️ Repository initialized with documentation.  
 - ✅ **2025-03-23** - 🔗 Project Page officially launched.  
 - ✅ **2025-03-23** - 📄 Paper available on arXiv.  
-- ⬜ TODO: 🚀 Provide core codebase and pre-trained models for evaluation.  
+- ✅ **2025-04-21**: 🚀 Provide core codebase, testing subset, and pre-trained models for evaluation.  
 - ⬜ TODO: 📦 Release the full PolaRGB dataset with download links.  
 - ⬜ TODO: 📝 Publish training code and instructions.  
 
@@ -36,10 +36,10 @@
 PolarFree addresses the challenging task of reflection removal using polarization cues and a novel diffusion-based approach. Key contributions include:  
 - **PolaRGB Dataset**: A large-scale dataset with diverse indoor and outdoor scenes, providing RGB and polarization images.  
 
-![Dataset Overview](docs/static/images/dataset_overview.png)
+![Dataset Overview](https://raw.githubusercontent.com/mdyao/PolarFree/doc/docs/static/images/dataset_overview.png)
 
 - **Diffusion Model**: Utilizes diffusion processes to generate reflection-free priors, enabling precise reflection removal and improved image clarity.  
-![Model Design](docs/static/images/model_design.png)
+![Model Design](https://raw.githubusercontent.com/mdyao/PolarFree/doc/docs/static/images/model_design.png)
 
 - **Superior Results**: Extensive experiments on the PolaRGB dataset show that PolarFree outperforms existing methods by ~2dB in PSNR, achieving cleaner reflection removal and sharper image details.  
 
@@ -49,22 +49,39 @@ PolarFree addresses the challenging task of reflection removal using polarizatio
 
 ---
 
-## 🚀 **Installation**  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/mdyao/PolarFree.git
-   cd PolarFree
-   pip install -r requirements.txt
-    ```
-2. Run the demo:
-    ```
-    python demo.py --input example.jpg --output result.jpg
-    ```
+## 🚀 **Installation & Usage**
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/mdyao/PolarFree.git
+cd PolarFree
+pip install -r requirements.txt
+```
+
+### 2. Download the Dataset
+
+You can access the dataset from Hugging Face:  
+👉 [https://huggingface.co/datasets/Mingde/PolaRGB](https://huggingface.co/datasets/Mingde/PolaRGB)
+
+Download and organize the dataset according to the structure required by the codebase.
+
+Note: Currently, only the test dataset is available. The training dataset is being organized. Stay tuned!
+
+
+### 3. Run the Demo
+
+Once everything is set up, run the demo script:
+
+```bash
+python simple_test.py -opt options/test/test.yml -gpu_id 0
+```
+--- 
 
 ## 📊 **Results**
 PolarFree achieves superior performance compared to existing methods:
 
-![Results](docs/static/images/results.png)
+![Results](https://raw.githubusercontent.com/mdyao/PolarFree/doc/docs/static/images/results.png)
 
 ## 📜 **Citation**
 If you find this work useful, please cite:
