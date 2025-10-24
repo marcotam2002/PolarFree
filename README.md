@@ -4,13 +4,32 @@
 
 # 🚀 **PolarFree: Polarization-based Reflection-Free Imaging** – [CVPR 2025]  
 
-🌟 *A Cutting-Edge Solution and Dataset for Polarization-based Reflection-Free Imaging*  
+
+
+<p align="center">
+    <a href="https://arxiv.org/abs/2503.18055"><img src="https://img.shields.io/badge/arXiv-2503.18055-b31b1b.svg" alt="arXiv Paper"></a>
+    <a href="https://mdyao.github.io/PolarFree/"><img src="https://img.shields.io/badge/Project-Page-brightgreen.svg" alt="Project Page"></a>
+    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python Version"></a>
+    <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch-1.12+-ee4c2c.svg" alt="PyTorch Version"></a>
+    <a href="https://github.com/mdyao/PolarFree/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
+    <a href="https://huggingface.co/datasets/Mingde/PolaRGB"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue" alt="Hugging Face Dataset"></a>
+    <a href="https://youtu.be/g-aNjbygiJM"><img src="https://img.shields.io/badge/YouTube-Demo-red.svg" alt="YouTube Demo"></a>
+</p>
+
+🌟 *A Solution and Dataset for Polarization-based Reflection-Free Imaging*  
 
 <img src="https://raw.githubusercontent.com/mdyao/PolarFree/doc/docs/static/images/reflection-refraction-polarization.gif" alt="Polarization-based Reflection and Refraction" width="50%">
 
+
 *Image source: [ThinkLucid](https://thinklucid.com/tech-briefs/polarization-explained-sony-polarized-sensor/)*  
 
-🔗 [**Project Page**](https://mdyao.github.io/PolarFree/) | 📄 [**Paper**](https://arxiv.org/abs/2503.18055) | 📦 [**Dataset**](https://huggingface.co/datasets/Mingde/PolaRGB) 
+
+---
+
+
+## 🎥 **Demo Video**
+Watch the demonstration of PolarFree in action:  
+[![PolarFree Demo](https://img.youtube.com/vi/g-aNjbygiJM/0.jpg)](https://youtu.be/g-aNjbygiJM)
 
 ---
 
@@ -21,16 +40,15 @@
 ✅ **Open Source**: Code and dataset are freely available for research and development.  
 
 
-
 ## ⏳ **Timeline**  
 
 - ✅ **2025-03-23** - 🛠️ Repository initialized with documentation.  
 - ✅ **2025-03-23** - 🔗 Project Page officially launched.  
 - ✅ **2025-03-23** - 📄 Paper available on arXiv.  
-- ✅ **2025-04-21**: 🚀 Provide core codebase, testing subset, and pre-trained models for evaluation.  
-- ⬜ TODO: 📦 Release the full PolaRGB dataset with download links.  
-- ⬜ TODO: 📝 Publish training code and instructions.  
-
+- ✅ **2025-04-21** - 🚀 Provide core codebase, testing subset, and pre-trained models for evaluation.  
+- ✅ **2025-06-28** - 📦 Release the full PolaRGB dataset with download links.  
+- ✅ **2025-06-28** - 📝 Publish training code.  
+- TODO: Provide detailed training and testing instructions.
 
 ## 📖 **Overview**  
 PolarFree addresses the challenging task of reflection removal using polarization cues and a novel diffusion-based approach. Key contributions include:  
@@ -56,8 +74,18 @@ PolarFree addresses the challenging task of reflection removal using polarizatio
 ```bash
 git clone https://github.com/mdyao/PolarFree.git
 cd PolarFree
-pip install -r requirements.txt
 ```
+
+## Requirements
+
+Due to the complexity of my development environment, I do not provide a complete `requirements.txt` file.  
+However, the following key dependencies and their versions are provided for reference:
+
+- basicsr == 1.4.2  
+- mmcv == 2.1.0  
+- torch == 2.4.1  
+- torchvision == 0.19.1
+
 
 ### 2. Download the Dataset
 
